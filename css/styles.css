@@ -207,6 +207,10 @@ GENERAL LAYOUT
         padding-top: 40px;
     }
 
+    .container--bottom {
+        padding-bottom: 40px;
+    }
+
     .price-grid {
         max-width: 635px;
     }
@@ -220,9 +224,21 @@ GENERAL LAYOUT
         width: 50%;
     }
 
+    .price-grid__desc {
+        letter-spacing: initial;
+    }
+
+    .price-grid__btn {
+        margin-bottom: 0;
+    }
+
     .price-grid__btn:hover,
     .price-grid__btn:focus {
         cursor: pointer;
         transform: scale(1.1, 1.1);
+    }
+
+    .price-grid__about {
+        padding-bottom: 0;
     }
 }
