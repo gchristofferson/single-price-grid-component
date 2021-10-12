@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- My Styles -->
+  <link rel="stylesheet" href="./css/styles.css">
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
@@ -14,37 +22,53 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  Join our community
+<body class="body">
+  <main class="price-grid">
 
-  30-day, hassle-free money back guarantee
+    <div class="price-grid__info">
+      <div class="container container--top">
+        <h1 class="price-grid__title">Join our community</h1>
+        <p class="price-grid__guarantee">30-day, hassle-free money back guarantee</p>
+        <p class="price-grid__text">Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+    </div>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+    <div class="price-grid__cta">
+      <div class="container">
+        <h2 class="price-grid__subtitle">Monthly Subscription</h2>
+        <div class="price-grid__price-container">
+          <div class="price-grid__price">$29</div>
+          <p class="price-grid__price-terms">per month</p>
+        </div>
+        <p class="price-grid__desc">Full access for less than &dollar;1 a day</p>
+        <button class="price-grid__btn">Sign Up</button>
+      </div>
+    </div>
 
-  Monthly Subscription
+    <div class="price-grid__about">
+      <div class="container">
+        <h2 class="price-grid__subtitle">Why Us</h2>
+        <ul class="price-grid__list">
+          <li class="price-grid__list-item">Tutorials by industry experts</li>
+          <li class="price-grid__list-item">Peer &amp; expert code review</li>
+          <li class="price-grid__list-item">Coding exercises</li>
+          <li class="price-grid__list-item">Access to our GitHub repos</li>
+          <li class="price-grid__list-item">Community forum</li>
+          <li class="price-grid__list-item">Flashcard decks</li>
+          <li class="price-grid__list-item">New videos every week</li>
+        </ul>
+      </div>
+    </div>
 
-  &dollar;29 per month
+  </main>
 
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/gchristofferson">Gregg Christofferson</a>.
     </p>
   </footer>
+
 </body>
 </html>

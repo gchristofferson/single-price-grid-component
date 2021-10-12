@@ -1,0 +1,173 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ================================
+COLORS
+================================= */
+
+:root {
+    /* -- Primary -- */
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    /* -- Neutral -- */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* ================================
+TYPOGRAPHY
+================================= */
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
+
+h1,
+h2,
+button,
+.price-grid__price {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 20px;
+    letter-spacing: 0.225px;
+    line-height: 23px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.225px;
+}
+
+.price-grid__guarantee {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.1875px;
+    margin-bottom: 16px;
+    color: var(--bright-yellow);
+}
+
+.price-grid__text,
+ul {
+    font-size: 14px;
+    letter-spacing: 0.175px;
+}
+
+.price-grid__price {
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.4px;
+}
+
+button {
+    font: inherit;
+    line-height: 19px;
+}
+
+ul {
+    line-height: 20px;
+}
+
+/* ================================
+GENERAL LAYOUT
+================================= */
+
+.body {
+    background-color: var(--light-gray);
+    padding: 72px 0 62px 0;
+}
+
+.container {
+    padding: 24px 24px 0 24px;
+}
+
+.container--top {
+    padding-top: 28px;
+}
+
+.price-grid {
+    max-width: 311px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 15px 30px rgba(0, 81, 171, 0.148847);
+    border-radius: 5px;
+}
+.price-grid__title {
+    margin-bottom: 24px;
+    color: var(--cyan);
+}
+
+.price-grid__text {
+    margin-bottom: 32px;
+    color: var(--grayish-blue);
+}
+
+.price-grid__cta,
+.price-grid__about {
+    color: #fff;
+}
+
+.price-grid__cta {
+    background-color: var(--cyan);
+}
+
+.price-grid__subtitle {
+    margin-bottom: 18px;
+}
+
+.price-grid__price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.price-grid__price-terms {
+    opacity: .5;
+    margin-left: 11px;
+}
+
+.price-grid__desc {
+    margin-bottom: 26px;
+}
+
+.price-grid__btn {
+    margin-bottom: 24px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--bright-yellow);
+    width: 100%;
+    color: inherit;
+    padding: 15px 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.0973011);
+    transition: transform 250ms;
+}
+
+.price-grid__btn:hover,
+.price-grid__btn:focus {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+
+.price-grid__about {
+    background-color: #54C0BC;
+    padding-bottom: 24px;
+}
+
+.price-grid__list {
+    opacity: .75;
+    list-style: none;
+}
