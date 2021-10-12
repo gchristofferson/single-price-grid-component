@@ -82,6 +82,25 @@ ul {
     line-height: 20px;
 }
 
+@media (min-width: 635px) {
+    h1 {
+        font-size: 24px;
+        letter-spacing: 0.3px;
+        line-height: 28px;
+    }
+
+    .price-grid__guarantee {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.225px;
+        margin-bottom: 11px;
+    }
+
+    .price-grid__text {
+        font-size: 1rem;
+    }
+}
+
 /* ================================
 GENERAL LAYOUT
 ================================= */
@@ -156,12 +175,6 @@ GENERAL LAYOUT
     transition: transform 250ms;
 }
 
-.price-grid__btn:hover,
-.price-grid__btn:focus {
-    cursor: pointer;
-    transform: scale(1.2, 1.2);
-}
-
 .price-grid__about {
     background-color: #54C0BC;
     padding-bottom: 24px;
@@ -170,4 +183,46 @@ GENERAL LAYOUT
 .price-grid__list {
     opacity: .75;
     list-style: none;
+}
+
+@media (min-width: 635px) {
+    .body {
+        padding: 163px 0;
+    }
+
+    .price-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .price-grid__info {
+        width: 100%;
+    }
+
+    .container {
+        padding: 40px 40px 0 40px;
+    }
+
+    .container--top {
+        padding-top: 40px;
+    }
+
+    .price-grid {
+        max-width: 635px;
+    }
+
+    .price-grid__text {
+        margin-bottom: 40px;
+    }
+
+    .price-grid__cta,
+    .price-grid__about {
+        width: 50%;
+    }
+
+    .price-grid__btn:hover,
+    .price-grid__btn:focus {
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+    }
 }
